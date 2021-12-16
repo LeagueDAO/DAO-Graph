@@ -21,8 +21,8 @@ then
   GRAPH_NODE="http://127.0.0.1:8020"
 elif [ "$GRAPH" == "rinkeby" ]
 then
-  IPFS_NODE="http://34.116.167.16:5001"
-  GRAPH_NODE="http://34.116.167.16:8020"
+  IPFS_NODE="http://34.123.226.18:5001"
+  GRAPH_NODE="http://34.123.226.18:8020"
 elif [ "$GRAPH" = "mainnet" ]
 then
   IPFS_NODE="http://34.118.119.85:5001"
@@ -37,13 +37,13 @@ fi
 
 # Create subgraph if missing
 {
-  graph create enterdao/DAO-Governance-Graph --node ${GRAPH_NODE}
+  graph create leaguedao/DAO-Governance-Graph --node ${GRAPH_NODE}
 } || {
   echo 'Subgraph was already created'
 }
 
 # Deploy subgraph
-graph deploy enterdao/DAO-Governance-Graph --ipfs ${IPFS_NODE} --node ${GRAPH_NODE}
+graph deploy leaguedao/DAO-Governance-Graph --ipfs ${IPFS_NODE} --node ${GRAPH_NODE}
 
 # Remove manifest
 rm subgraph.yaml
