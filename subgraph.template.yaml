@@ -1,6 +1,6 @@
 specVersion: 0.0.2
 description: Graph for Staking contract of the Yield Farming and DAO
-repository: https://github.com/enterdao/DAO-Graph
+repository: https://github.com/LeagueDAO/DAO-Graph
 schema:
   file: ./schema.graphql
 dataSources:
@@ -80,7 +80,6 @@ dataSources:
         - event: DelegatedPowerDecreased(indexed address,indexed address,uint256,uint256)
           handler: handleDelegatedPowerDecreased
       file: ./src/mappings.ts
-
   - kind: ethereum/contract
     name: Governance
     network: {{network}}
@@ -120,4 +119,25 @@ dataSources:
           handler: handleAbrogationProposalVote
         - event: AbrogationProposalVoteCancelled(indexed uint256,indexed address)
           handler: handleAbrogationProposalVoteCancelled
+      file: ./src/mappings.ts
+  - kind: ethereum/contract
+    name: MerkleDistributor
+    network: rinkeby
+    source:
+      address: "{{MerkleDistributor}}"
+      abi: MerkleDistributor
+      startBlock: {{startBlock}}
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      entities:
+        - Claim
+        - Overview
+      abis:
+        - name: MerkleDistributor
+          file: ./abis/MerkleDistributor.json
+      eventHandlers:
+        - event: Claimed(uint256,address,uint256,uint256)
+          handler: handleClaim
       file: ./src/mappings.ts

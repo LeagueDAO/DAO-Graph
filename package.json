@@ -4,8 +4,8 @@
   "scripts": {
     "build": "CONFIG=$npm_config_config GRAPH=local NO_DEPLOY=true ./deploy.sh",
     "deploy:local": "CONFIG=$npm_config_config GRAPH=local ./deploy.sh",
-    "deploy:rinkeby": "CONFIG=$npm_config_config GRAPH=rinkeby ./deploy.sh",
-    "deploy:mainnet": "CONFIG=$npm_config_config GRAPH=mainnet ./deploy.sh",
+    "deploy:rinkeby": "CONFIG=$npm_config_config IPFS_NODE_IP=$npm_config_ipfs_node_ip GRAPH_NODE_IP=$npm_config_graph_node_ip GRAPH=rinkeby ./deploy.sh",
+    "deploy:mainnet": "CONFIG=$npm_config_config IPFS_NODE_IP=$npm_config_ipfs_node_ip GRAPH_NODE_IP=$npm_config_graph_node_ip GRAPH=mainnet ./deploy.sh",
     "deploy:mainnet-remote": "CONFIG=$npm_config_config GRAPH=mainnet-remote ./deploy.sh"
   },
   "devDependencies": {

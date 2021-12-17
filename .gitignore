@@ -63,3 +63,4 @@ typings/
 /generated/
 /build/
 /data
+.DS_Store
