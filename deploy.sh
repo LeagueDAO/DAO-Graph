@@ -29,7 +29,7 @@ then
   GRAPH_NODE="http://${GRAPH_NODE_IP}:8020"
 elif [ "$GRAPH" = "mainnet-remote" ]
 then
-  graph deploy --studio enterdao
+  graph deploy --studio leaguedao
   # Remove manifest
   rm subgraph.yaml
   exit 0

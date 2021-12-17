@@ -1,6 +1,6 @@
 {
   "network": "mainnet",
-  "description": "EnterDAO DAO Graph",
+  "description": "LeagueDAO DAO Graph",
   "startBlock": 13199622,
   "Staking": "0x3F148612315AaE2514AC630D6FAf0D94B8Cd8E33",
   "Governance": "0xCF25693D992b311A873aDe17b4b56ba79a49348a",

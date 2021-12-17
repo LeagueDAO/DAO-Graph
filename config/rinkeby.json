@@ -1,6 +1,6 @@
 {
     "network": "rinkeby",
-    "description": "EnterDAO DAO Graph (rinkeby)",
+    "description": "LeagueDAO DAO Graph (rinkeby)",
     "startBlock": 9245529,
     "Staking": "0x4Af422FB36c2DeC1Ee57160f0f6FEfc50DAf3349",
     "Governance": "0x843Ec9F11E9162bD1A93428f574137Ea2dAFe695",

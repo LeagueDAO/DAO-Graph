@@ -1,6 +1,6 @@
 specVersion: 0.0.2
 description: Graph for Staking contract of the Yield Farming and DAO
-repository: https://github.com/enterdao/DAO-Graph
+repository: https://github.com/LeagueDAO/DAO-Graph
 schema:
   file: ./schema.graphql
 dataSources:
