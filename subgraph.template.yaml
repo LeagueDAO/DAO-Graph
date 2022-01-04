@@ -122,7 +122,7 @@ dataSources:
       file: ./src/mappings.ts
   - kind: ethereum/contract
     name: MerkleDistributor
-    network: rinkeby
+    network: {{network}}
     source:
       address: "{{MerkleDistributor}}"
       abi: MerkleDistributor

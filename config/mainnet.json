@@ -1,10 +1,10 @@
 {
   "network": "mainnet",
   "description": "LeagueDAO DAO Graph",
-  "startBlock": 13199622,
-  "Staking": "0x3F148612315AaE2514AC630D6FAf0D94B8Cd8E33",
-  "Governance": "0xCF25693D992b311A873aDe17b4b56ba79a49348a",
-  "Kernel": "0xD2c83AB0bee469ab5853c1e60bf8B663094EDca5",
-  "Token": "0xd779eea9936b4e323cddff2529eb6f13d0a4d66e",
-  "MerkleDistributor": "0x8C76844c6f007D7249a67F4bAe898f44114E1d24"
+  "startBlock": 13224269,
+  "Staking": "0x43921eb2E5C78D9e887d3Ecd4620a3Bd606f4F95",
+  "Governance": "0x71E667b90C50789324FCCc31D27CF58Da2c7849B",
+  "Kernel": "0x67F60dA0F409AB8427e8a408efc4B137D0BD4e7B",
+  "Token": "0x7b39917f9562C8Bc83c7a6c2950FF571375D505D",
+  "MerkleDistributor": "0x0B8136Fa6240eF7ce48b3a02D213471B042d0DDa"
 }
